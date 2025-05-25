@@ -1,0 +1,358 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+   /* --cor-principal: #6E859F;
+    --cor-secundaria: #284260;
+    --cor-destaque: #C92BFC;
+}
+
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    color: var(--cor-principal);
+}
+*//*
+--cor-principal: #ffffff;
+--cor-secundaria: #a0c85fe5;
+--cor-destaque: #72d8e3;
+}
+div.modal-content{
+    background-color:#14143a;
+ }
+body {
+font-family: 'Chakra Petch', sans-serif;
+color: var(--cor-principal);
+background-color:#14143a;
+}
+h1, h2, h5 {
+    color: var(--cor-secundaria);
+    font-weight: 700;
+    font-size: 30px;
+}
+p{
+    font-size: 20px;
+}
+.lead, .btn-link {
+    color: var(--cor-destaque);
+    font-weight: 700;
+}
+.lead {
+    color: var(--cor-principal);
+    font-weight: 700;
+}
+a, .btn-link:hover {
+    color: var(--cor-secundaria)
+}
+
+a:hover{
+    color: var(--cor-destaque);
+}
+header{
+    background-image: url(img/f.jpg);
+    margin-block-start:20px;
+    padding:10px;
+
+}
+h1{
+    color:#9eff00e5;
+    font-size:45px;
+}
+
+   .card-img-tp, .card-img-top
+{
+    max-width: 50%;
+    max-height: 50%;
+}
+*/
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --cor-principal: #ffffff;
+    --cor-secundaria: #a0c85fe5;
+    --cor-destaque: #72d8e3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    color: var(--cor-principal);
+    background-color: #14143a;
+    line-height: 1.6;
+}
+
+div.modal-content {
+    background-color: #14143a;
+}
+
+h1, h2, h5 {
+    color: var(--cor-secundaria);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h1 {
+    color: #9eff00e5;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+h2 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+h5 {
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+}
+
+p {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    margin-bottom: 1rem;
+}
+
+.lead, .btn-link {
+    color: var(--cor-destaque);
+    font-weight: 700;
+}
+
+.lead {
+    color: var(--cor-principal);
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+}
+
+a, .btn-link:hover {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--cor-destaque);
+    transition: color 0.3s ease;
+}
+
+header {
+    background-image: url('img/f.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-block-start: 1.25rem;
+    padding: 1.5rem;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: #14143a;
+    border: none;
+    min-height: 400px; /* Ensure consistent card height */
+}
+
+/* Improved image scaling for larger screens */
+.card-img-top {
+    width: 100%;
+    height: clamp(200px, 20vw, 300px); /* Scales with viewport */
+    object-fit: cover;
+}
+
+/* Improved card body for balanced text */
+.card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center text */
+}
+
+/* Improved list styling */
+ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    list-style-type: disc;
+    color: var(--cor-principal);
+    margin: 0 auto 1rem;
+    max-width: 80%; /* Tighter width for balance */
+    padding-left: 2rem;
+    column-gap: 2rem; /* Space between columns */
+}
+
+ul li::marker {
+    color: var(--cor-destaque);
+}
+
+ul li {
+    break-inside: avoid-column;
+    margin-left: -20px;
+}
+ul li.res{
+     
+  
+    list-style-position: inside;
+    position:inline;
+    float: left;
+    padding: 7px;
+    
+    
+}
+.image-reference {
+    font-size: clamp(0.75rem, 2vw, 0.875rem);
+    color: var(--cor-principal);
+    opacity: 0.8;
+    margin: 0.5rem 1rem 0;
+    text-align: left;
+    font-style: italic;
+}
+
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    color: var(--cor-principal);
+    background-color: var(--cor-secundaria);
+    border: 1px solid var(--cor-destaque);
+    border-radius: 0.25rem;
+    font-size: clamp(0.875rem, 2.5vw, 1rem);
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-back:hover {
+    color: var(--cor-destaque);
+    background-color: #14143a;
+}
+
+.btn-back:focus {
+    outline: 2px solid var(--cor-destaque);
+    outline-offset: 2px;
+}
+
+.btn-top-left {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1000;
+}
+
+footer {
+    background-color: #14143a;
+}
+
+/* Adjust card width for larger screens */
+@media (min-width: 1200px) {
+    .ard {
+        max-width: 90%; /* Limit card width on extra-large screens */
+        margin: 0 auto; /* Center cards */
+    }
+
+    .row > .col-lg-6 {
+        flex: 0 0 auto;
+        width: 50%; /* Slightly narrower columns */
+        margin: 0 auto; /* Center cards in row */
+    }
+
+    .card-img-top {
+        height: clamp(250px, 2vw, 350px); /* Larger images on big screens */
+    }
+
+    ul {
+        max-width: 70%; /* Tighter list width for balance */
+        column-gap: 2.5rem; /* More space between columns */
+    }
+p{
+        text-align: center;
+    }
+    h5{
+        text-align: center;
+    }
+}
+
+/* Tablet adjustments */
+@media (max-width: 992px) {
+    .card .row {
+        flex-direction:row-reverse;
+    }
+
+    .card-img-top {
+        height: clamp(150px, 25vw, 200px);
+    }
+
+    .card-body {
+        text-align: center;
+        justify-content: flex-start; /* Align text to top when stacked */
+    }
+
+    .image-reference {
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    ul {
+        columns: 1;
+        padding-left: 1.5rem;
+        max-width: 100%;
+        text-align: left;
+       
+    
+
+    }
+    p{
+        text-align: left;
+    }
+}
+
+/* Mobile adjustments */
+@media (max-width: 576px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: clamp(1.75rem, 4.5vw, 2.5rem);
+    }
+
+    h2 {
+        font-size: clamp(1.25rem, 3.5vw, 2rem);
+    }
+
+    p {
+        font-size: clamp(0.875rem, 2.5vw, 1rem);
+    }
+
+    .image-reference {
+        font-size: clamp(0.625rem, 2vw, 0.75rem);
+    }
+
+    .card-img-top {
+        height: clamp(100px, 30vw, 150px);
+    }
+
+    .card {
+        min-height: 300px; /* Smaller min-height for mobile */
+    }
+
+    ul {
+        columns: 1;
+        padding-left: 1.25rem;
+        font-size: clamp(0.875rem, 2.5vw, 1rem);
+        max-width: 100%;
+    }
+
+    .btn-back {
+        font-size: clamp(0.75rem, 2.5vw, 0.875rem);
+        padding: 0.4rem 0.8rem;
+    }
+
+    .btn-top-left {
+        top: 0.5rem;
+        left: 0.5rem;
+    }
+
+    header {
+        padding: 1rem;
+        min-height: 15vh;
+    }
+}
