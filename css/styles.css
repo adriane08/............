@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 :root {
@@ -24,7 +23,9 @@ div.modal-content {
     background-color: #14143a;
 }
 
-h1, h2, h5 {
+h1,
+h2,
+h5 {
     color: var(--cor-secundaria);
     font-weight: 700;
     line-height: 1.2;
@@ -48,7 +49,8 @@ p {
     margin-bottom: 1rem;
 }
 
-.lead, .btn-link {
+.lead,
+.btn-link {
     color: var(--cor-destaque);
     font-weight: 700;
 }
@@ -58,7 +60,8 @@ p {
     font-size: clamp(1.25rem, 3vw, 1.5rem);
 }
 
-a, .btn-link:hover {
+a,
+.btn-link:hover {
     color: var(--cor-secundaria);
     text-decoration: none;
 }
@@ -84,7 +87,7 @@ header {
 .card {
     background-color: #14143a;
     border: none;
-    min-height: 400px; 
+    min-height: 400px;
 }
 
 
@@ -98,7 +101,7 @@ header {
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
 }
 
 
@@ -109,9 +112,9 @@ ul {
     list-style-type: disc;
     color: var(--cor-principal);
     margin: 0 auto 1rem;
-    max-width: 80%; 
+    max-width: 80%;
     padding-left: 2rem;
-    column-gap: 2rem; 
+    column-gap: 2rem;
 }
 
 ul li::marker {
@@ -122,16 +125,18 @@ ul li {
     break-inside: avoid-column;
     margin-left: -20px;
 }
-ul li.res{
-     
-  
+
+ul li.res {
+
+
     list-style-position: inside;
-    position:inline;
+    position: inline;
     float: left;
     padding: 7px;
-    
-    
+
+
 }
+
 .image-reference {
     font-size: clamp(0.75rem, 2vw, 0.875rem);
     color: var(--cor-principal);
@@ -183,24 +188,26 @@ footer {
         margin: 0 auto;
     }
 
-    .row > .col-lg-6 {
+    .row>.col-lg-6 {
         flex: 0 0 auto;
-        width: 50%; 
-        margin: 0 auto; 
+        width: 50%;
+        margin: 0 auto;
     }
 
     .card-img-top {
-        height: clamp(250px, 2vw, 350px); 
+        height: clamp(250px, 2vw, 350px);
     }
 
     ul {
-        max-width: 70%; 
-        column-gap: 2.5rem; 
+        max-width: 70%;
+        column-gap: 2.5rem;
     }
-p{
+
+    p {
         text-align: center;
     }
-    h5{
+
+    h5 {
         text-align: center;
     }
 }
@@ -208,7 +215,7 @@ p{
 
 @media (max-width: 992px) {
     .card .row {
-        flex-direction:row-reverse;
+        flex-direction: row-reverse;
     }
 
     .card-img-top {
@@ -219,6 +226,7 @@ p{
         text-align: center;
         justify-content: flex-start;
     }
+
     .image-reference {
         text-align: center;
         margin: 0.5rem 0;
@@ -229,11 +237,12 @@ p{
         padding-left: 1.5rem;
         max-width: 100%;
         text-align: left;
-       
-    
+
+
 
     }
-    p{
+
+    p {
         text-align: left;
     }
 }
@@ -265,7 +274,7 @@ p{
     }
 
     .card {
-        min-height: 300px; 
+        min-height: 300px;
     }
 
     ul {
