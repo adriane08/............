@@ -1,68 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-:root {
-   /* --cor-principal: #6E859F;
-    --cor-secundaria: #284260;
-    --cor-destaque: #C92BFC;
-}
-
-body {
-    font-family: 'Chakra Petch', sans-serif;
-    color: var(--cor-principal);
-}
-*//*
---cor-principal: #ffffff;
---cor-secundaria: #a0c85fe5;
---cor-destaque: #72d8e3;
-}
-div.modal-content{
-    background-color:#14143a;
- }
-body {
-font-family: 'Chakra Petch', sans-serif;
-color: var(--cor-principal);
-background-color:#14143a;
-}
-h1, h2, h5 {
-    color: var(--cor-secundaria);
-    font-weight: 700;
-    font-size: 30px;
-}
-p{
-    font-size: 20px;
-}
-.lead, .btn-link {
-    color: var(--cor-destaque);
-    font-weight: 700;
-}
-.lead {
-    color: var(--cor-principal);
-    font-weight: 700;
-}
-a, .btn-link:hover {
-    color: var(--cor-secundaria)
-}
-
-a:hover{
-    color: var(--cor-destaque);
-}
-header{
-    background-image: url(img/f.jpg);
-    margin-block-start:20px;
-    padding:10px;
-
-}
-h1{
-    color:#9eff00e5;
-    font-size:45px;
-}
-
-   .card-img-tp, .card-img-top
-{
-    max-width: 50%;
-    max-height: 50%;
-}
-*/
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 :root {
@@ -148,25 +84,24 @@ header {
 .card {
     background-color: #14143a;
     border: none;
-    min-height: 400px; /* Ensure consistent card height */
+    min-height: 400px; 
 }
 
-/* Improved image scaling for larger screens */
+
 .card-img-top {
     width: 100%;
-    height: clamp(200px, 20vw, 300px); /* Scales with viewport */
+    height: clamp(200px, 20vw, 300px);
     object-fit: cover;
 }
 
-/* Improved card body for balanced text */
 .card-body {
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Vertically center text */
+    justify-content: center; 
 }
 
-/* Improved list styling */
+
 ul {
     columns: 2;
     -webkit-columns: 2;
@@ -174,9 +109,9 @@ ul {
     list-style-type: disc;
     color: var(--cor-principal);
     margin: 0 auto 1rem;
-    max-width: 80%; /* Tighter width for balance */
+    max-width: 80%; 
     padding-left: 2rem;
-    column-gap: 2rem; /* Space between columns */
+    column-gap: 2rem; 
 }
 
 ul li::marker {
@@ -241,26 +176,26 @@ footer {
     background-color: #14143a;
 }
 
-/* Adjust card width for larger screens */
+
 @media (min-width: 1200px) {
     .ard {
-        max-width: 90%; /* Limit card width on extra-large screens */
-        margin: 0 auto; /* Center cards */
+        max-width: 90%;
+        margin: 0 auto;
     }
 
     .row > .col-lg-6 {
         flex: 0 0 auto;
-        width: 50%; /* Slightly narrower columns */
-        margin: 0 auto; /* Center cards in row */
+        width: 50%; 
+        margin: 0 auto; 
     }
 
     .card-img-top {
-        height: clamp(250px, 2vw, 350px); /* Larger images on big screens */
+        height: clamp(250px, 2vw, 350px); 
     }
 
     ul {
-        max-width: 70%; /* Tighter list width for balance */
-        column-gap: 2.5rem; /* More space between columns */
+        max-width: 70%; 
+        column-gap: 2.5rem; 
     }
 p{
         text-align: center;
@@ -270,7 +205,7 @@ p{
     }
 }
 
-/* Tablet adjustments */
+
 @media (max-width: 992px) {
     .card .row {
         flex-direction:row-reverse;
@@ -282,9 +217,8 @@ p{
 
     .card-body {
         text-align: center;
-        justify-content: flex-start; /* Align text to top when stacked */
+        justify-content: flex-start;
     }
-
     .image-reference {
         text-align: center;
         margin: 0.5rem 0;
@@ -304,7 +238,7 @@ p{
     }
 }
 
-/* Mobile adjustments */
+
 @media (max-width: 576px) {
     body {
         font-size: 14px;
@@ -331,7 +265,7 @@ p{
     }
 
     .card {
-        min-height: 300px; /* Smaller min-height for mobile */
+        min-height: 300px; 
     }
 
     ul {
