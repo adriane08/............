@@ -73,7 +73,7 @@
 .btn-close::before {
     content: "×";
     font-size: 1.5rem;
-    color: #000;
+    color: #ffffff;
 }
 
 /* Modal body */
