@@ -1,7 +1,7 @@
 # Festejando a conexão Campo Cidade
 Este projeto é uma página web informativa sobre as atuais conexões do campo e cidade. Por meio de uma abordagem visual e descritiva do tema geral "Festejando a conexão campo cidade", e como isso reflete nos seguintes subtóticos:
 * Sustentabilidade;
-* Alimentação;
+* Alimentos;
 * Tecnologias.
 
 ### Tecnologias utilizadas:
@@ -13,7 +13,7 @@ Arquivos:
 * index.html: Arquivo principal com a estrutura da página.
 * alimentos.html, tecnologias.html e sustentabilidade.html: Arquivos abordando subtópicos.
 * style.css: Arquivo de estilos para formatação da página principal.
-* styles.css: Arquivo de estilos para formatação das páginas de subtópicos.
+* styles.css: Arquivo de estilos para formatação das páginas dos subtópicos.
 
 ### Descrição do projeto:
 Arquivo principal:
@@ -25,12 +25,12 @@ Arquivo principal:
 
 Páginas detalhando os principais benefícios e como ocorre a conexão do campo e cidade para cada tópico.
 
-#### Rodapé (Footer):
+#### Rodapé:
 
 Link para a página do GitHub do autor.
 
 Como Rodar o Projeto:
-* Clique em um dos links na seção About.
+* Clique no link na seção About.
   #### OU
 * Clone ou faça o download do repositório.
 * Abra o arquivo index.html em um navegador de sua escolha.
