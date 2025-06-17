@@ -5,8 +5,191 @@
     --cor-secundaria: #acff26d5;
     --cor-terciaria: #9dff00;
     --cor-destaque: #49e7f8d0;
+    --amarelo:#ffcc00;
+    --rosa:#ff6699; 
+    --azul:#66ccff;
+    --verde:#99ff66;
+    --roxo:#cc66ff;
+    --laranja:#ff9900;
+    --ciano:#00ffff;
+    --magenta:#ff00ff;
+    --ouro:#daa520;
+    --roxo2:#4b0082;
+    --cinza:#c0c0c0; 
+    --amarelo2:#adff2f;
+    --azul2:#87ceeb;
+    --coral:#ff7f50;
+    --branco:#dee2e6;
+}
+.content {
+    text-align: center;
+    padding-top: 20vh; /* Empurra o conteúdo para baixo */
+    position: relative; /* Para garantir que o conteúdo fique sobre os confetes */
+    z-index: 1; /* Garante que o texto fique acima dos confetes */
 }
 
+.content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 1.2em;
+}
+
+/* Estilos para cada confete individual */
+.confetti {
+    position: absolute; /* Permite posicionar os confetes livremente */
+    width: 7px; /* Tamanho padrão um pouco menor */
+    height: 7px; /* Tamanho padrão um pouco menor */
+    background-color: var(--amarelo); /* Cor padrão do confete (amarelo) */
+    border-radius: 50%; /* Faz o confete redondo */
+    opacity: 0; /* Começa invisível */
+    animation: fall 5s linear forwards; /* Aplica a animação de queda */
+    will-change: transform, opacity; /* Otimização de performance para animações */
+    filter: drop-shadow(0 0 1px rgba(0,0,0,0.05)); /* Uma sombra sutil */
+}
+
+/* MUITAS VARIAÇÕES PARA OS CONFETES */
+/* Isso ajuda a criar um efeito mais orgânico e menos repetitivo */
+
+/* Variação 1: Rosa, tamanhos diferentes, atrasos variados */
+.confetti:nth-child(2n) {
+    background-color:var(--rosa); /* Rosa */
+    width: 9px;
+    height: 9px;
+    animation-delay: 0.5s;
+    animation-duration: 4.8s;
+}
+
+/* Variação 2: Azul, formas levemente diferentes */
+.confetti:nth-child(3n) {
+    background-color:var(--azul);/* Azul */
+    width: 6px;
+    height: 6px;
+    border-radius: 20%; /* Quadrado */
+    animation-delay: 1.2s;
+    animation-duration: 5.5s;
+}
+
+/* Variação 3: Verde, rotação inicial e mais rápida */
+.confetti:nth-child(4n) {
+    background-color:var(--verde); /* Verde */
+    width: 8px;
+    height: 8px;
+    animation-delay: 0.8s;
+    animation-duration: 4.2s;
+    transform: rotate(45deg); /* Começa um pouco rotacionado */
+}
+
+/* Variação 4: Roxo, mais lento */
+.confetti:nth-child(5n) {
+    background-color:var(--roxo); /* Roxo */
+    width: 10px;
+    height: 10px;
+    animation-delay: 1.8s;
+    animation-duration: 6s;
+}
+
+/* Variação 5: Laranja, menor e com mais atraso */
+.confetti:nth-child(6n) {
+    background-color:var(--laranja); /* Laranja */
+    width: 5px;
+    height: 5px;
+    animation-delay: 2.5s;
+    animation-duration: 3.8s;
+}
+
+/* Variação 6: Ciano, rotação diferente */
+.confetti:nth-child(7n) {
+    background-color: var(--ciano); /* Ciano */
+    width: 8px;
+    height: 8px;
+    border-radius: 30%; /* Levemente arredondado */
+    animation-delay: 0.3s;
+    animation-duration: 5.2s;
+}
+
+/* Variação 7: Magenta, mais espesso */
+.confetti:nth-child(8n) {
+    background-color: var(--magenta);  /* Magenta */
+    width: 11px;
+    height: 11px;
+    animation-delay: 1s;
+    animation-duration: 4.7s;
+}
+
+/* Variação 8: Ouro, mais demorado */
+.confetti:nth-child(9n) {
+    background-color:var(--ouro); /* ouro */
+    width: 7px;
+    height: 7px;
+    animation-delay: 2.2s;
+    animation-duration: 6.5s;
+}
+
+/* Variação 9: Índigo, rápido */
+.confetti:nth-child(10n) {
+    background-color: var(--roxo2); /* roxo */
+    width: 6px;
+    height: 6px;
+    animation-delay: 0.7s;
+    animation-duration: 3.5s;
+}
+
+/* Variação 10: Prata, formato de estrela (simulado) */
+.confetti:nth-child(11n) {
+    background-color:var(--cinza); /* Cinza */
+    width: 9px;
+    height: 9px;
+    border-radius: 0; /* Remove borda redonda */
+    transform: rotate(15deg); /* Simula um formato diferente */
+    animation-delay: 1.5s;
+    animation-duration: 4.9s;
+}
+
+/* Variação 11: Amarelo-esverdeado */
+.confetti:nth-child(12n) {
+    background-color:var(--amarelo2) ; /* amarelo */
+    width: 8px;
+    height: 8px;
+    animation-delay: 0.9s;
+    animation-duration: 5.1s;
+}
+
+/* Variação 12: Azul-celeste */
+.confetti:nth-child(13n) {
+    background-color: var(--azul2); /* azul */
+    width: 7px;
+    height: 7px;
+    animation-delay: 1.3s;
+    animation-duration: 4.6s;
+}
+
+/* Variação 13: Vermelho-coral */
+.confetti:nth-child(14n) {
+    background-color: var(--coral); /* Coral */
+    width: 10px;
+    height: 10px;
+    animation-delay: 0.6s;
+    animation-duration: 5.8s;
+}
+
+
+/* Definição da animação 'fall' */
+@keyframes fall {
+    0% {
+        transform: translateY(-50px) rotate(0deg); /* Começa 50px acima do topo da tela, sem rotação */
+        opacity: 0; /* Totalmente invisível */
+    }
+    10% {
+        opacity: 1; /* Torna-se visível rapidamente no início da queda */
+    }
+    100% {
+        transform: translateY(100vh) rotate(720deg); /* Cai até 100% da altura da viewport, girando duas vezes */
+        opacity: 0; /* Desaparece ao sair da tela */
+    }
+}
 .modal-toggle {
     display: none;
 }
@@ -44,7 +227,7 @@
 
 .modal-header {
     padding: 1rem;
-    border-bottom: 1px solid #dee2e6;
+    border-bottom: 1px solid var(--branco);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,7 +264,7 @@
 
 .modal-footer {
     padding: 1rem;
-    border-top: 1px solid #dee2e6;
+    border-top: 1px solid var(--branco);
     text-align: right;
 }
 
