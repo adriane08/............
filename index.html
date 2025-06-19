@@ -1,33 +1,19 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" integrity="sha384-2PQ3q2v4I5WFcC7u2cS4yXVCMLSL4A9nDBb3CevL4t7yE2pwzS/ILrg4Q90/ogS5" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Festejando a conexão</title>
 </head>
 
 <body>
-    <div class="confetti-container">
-        <div class="confetti" style="left: 1%;"></div>
-        <!-- ... outros confettis ... -->
-        <div class="confetti" style="left: 100%;"></div>
-    </div>
-
-    <header class="container text-center">
-        <h1 class="lead">Festejando a conexão</h1>
-        <h1>Campo e Cidade_</h1>
-        <p class="lead">Saiba como isso acontece hoje!</p>
-        <div>
-            <p class="badge bg-secondary">Campo</p>
-            <p class="badge bg-secondary">Cidade</p>
-        </div>
-    </header>
 <div class="confetti-container">
         <div class="confetti" style="left: 0%;"></div>
         <div class="confetti" style="left: 2%;"></div>
@@ -80,14 +66,27 @@
         <div class="confetti" style="left: 96%;"></div>
         <div class="confetti" style="left: 98%;"></div>
     </div>
+
+    <header class="container text-center">
+        <h1 class="lead">Festejando a conexão</h1>
+        <h1>Campo e Cidade_</h1>
+        <p class="lead">Saiba como isso acontece hoje!</p>
+<div>
+    <span class="badge bg-secondary">Campo</span>
+    <span class="badge bg-secondary">Cidade</span>
+</div>
+    </header>
+
     <main class="container mt-5">
         <h2>Como podemos ver as conexões entre o campo e a cidade:</h2>
         <div class="row">
             <!-- Tópico 1 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="img/alim/soja.jpg" class="card-img-top" alt="Foto de grãos de soja">
-                    <p class="image-reference">Fonte: arquivo pessoal</p>
+                   <figure>
+                        <img src="img/alim/soja.jpg" class="card-img-top" alt="Foto de grãos de soja">
+                        <figcaption class="image-reference">Fonte: arquivo pessoal</figcaption>
+                    </figure>
                     <div class="card-body">
                         <h5 class="card-title">Alimentos</h5>
                         <label for="modal1-toggle" class="btn btn-link" tabindex="0">Descobrir</label>
@@ -97,8 +96,10 @@
             <!-- Tópico 2 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="img/sust/mic.jpg" class="card-img-top" alt="Imagem de uma planta vista na lente do microscópio">
-                    <p class="image-reference">Fonte: arquivo pessoal</p>
+                    <figure>
+                        <img src="img/sust/mic.jpg" class="card-img-top" alt="Imagem de uma planta vista na lente do microscópio">
+                        <figcaption class="image-reference">Fonte: arquivo pessoal</figcaption>
+                    </figure>
                     <div class="card-body">
                         <h5 class="card-title">Sustentabilidade</h5>
                         <label for="modal2-toggle" class="btn btn-link" tabindex="0">Descobrir</label>
@@ -108,8 +109,10 @@
             <!-- Tópico 3 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="img/tec/gps.jpg" class="card-img-top" alt="Imagem de um GPS em um trator">
-                    <p class="image-reference">Fonte: arquivo pessoal</p>
+                    <figure>
+                        <img src="img/tec/gps.jpg" class="card-img-top" alt="Imagem de um GPS em um trator">
+                        <figcaption class="image-reference">Fonte: arquivo pessoal</figcaption>
+                    </figure>
                     <div class="card-body">
                         <h5 class="card-title">Tecnologias</h5>
                         <label for="modal3-toggle" class="btn btn-link" tabindex="0">Descobrir</label>
@@ -185,15 +188,12 @@
         </div>
     </main>
 
-    <footer class="container py-5">
+    <footer class="container py-5 text-center">
         <h2>Entre em contato</h2>
-        <div>
-            <i class="bi bi-github" aria-label="Ícone do GitHub"></i>
-            <a href="https://github.com/adriane08">GitHub</a>
-        </div>
-        <p class="text-center">Agrinho 2025</p>
-        
+        <div class="my-3">
+    <a href="https://github.com/adriane08"><i class="bi bi-github me-2"></i>GitHub</a>
+</div>
+        <p class="my-5">Agrinho 2025</p>
     </footer>
 </body>
-
 </html>
