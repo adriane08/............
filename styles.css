@@ -41,15 +41,17 @@ h2 {
 }
 
 h5 {
-    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    font-size: clamp(1.4rem, 3vw, 1.75rem);
      text-align:center;
 }
 
 p {
-    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    font-size: clamp(1.2rem, 2.5vw, 1.25rem);
     margin-bottom: 1rem;
 }
-
+li{
+    font-size:1.1rem;
+}
 .lead,
 .btn-link {
     color: var(--cor-destaque);
