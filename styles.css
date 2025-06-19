@@ -41,12 +41,12 @@ h2 {
 }
 
 h5 {
-    font-size: clamp(3rem, 3vw, 1.75rem);
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
      text-align:center;
 }
 
 p {
-    font-size: clamp(1.9rem, 2.5vw, 2.25rem);
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
     margin-bottom: 1rem;
 }
 
@@ -125,7 +125,6 @@ ul li::marker {
 ul li {
     break-inside: avoid-column;
     margin-left: -20px;
-    font-size:1.7rem;
 }
 
 ul li.res {
