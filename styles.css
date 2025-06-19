@@ -93,7 +93,7 @@ header {
 
 .card-img-top {
     width: 100%;
-    height: clamp(200px, 20vw, 300px);
+    height: clamp(200px, 45vw, 300px);
     object-fit: cover;
 }
 
@@ -191,7 +191,7 @@ footer {
     }
 
     .card-img-top {
-        height: clamp(250px, 2vw, 350px);
+        height: clamp(250px, 50vw, 350px);
     }
 
     ul {
