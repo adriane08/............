@@ -88,7 +88,7 @@ header {
 }
 
 .card {
-    background-color: #14143a;
+    background-color: #000c087c;
     border: none;
     min-height: 400px;
 }
@@ -105,7 +105,9 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: var(--cor-principal);
 }
+
 
 
 ul {
