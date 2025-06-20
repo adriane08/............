@@ -239,7 +239,7 @@ footer {
     }
 
     p {
-        text-align: left;
+        text-align: center;
     }
 }
 
@@ -259,6 +259,7 @@ footer {
 
     p {
         font-size: clamp(1.15rem, 2.5vw, 1.8rem);
+        text-align:center;
     }
 
     .image-reference {
