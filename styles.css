@@ -101,6 +101,7 @@ header {
 }
 
 .card-body {
+    background-color: #000c087c;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
