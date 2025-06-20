@@ -88,7 +88,7 @@ header {
 }
 
 .card {
-    background-color: #000c087c;
+    background-color: #14143a;
     border: none;
     min-height: 400px;
 }
@@ -101,14 +101,11 @@ header {
 }
 
 .card-body {
-    background-color: #000c087c;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: var(--cor-principal);
 }
-
 
 
 ul {
@@ -248,12 +245,12 @@ footer {
 
 
 @media (max-width: 576px) {
- body {
-        font-size: 15px;
+    body {
+        font-size: 14px;
     }
 
     h1 {
-        font-size: clamp(2.85rem, 4.5vw, 2.5rem);
+        font-size: clamp(1.85rem, 4.5vw, 2.5rem);
     }
 
    h2 {
