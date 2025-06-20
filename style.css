@@ -305,7 +305,7 @@ h4{
 
 .lead {
     font-weight: 700;
-    color: var(--cor-destaque);
+    color: var(--cor-principal);
     line-height: 1.2;
     font-size: clamp(1.25rem, 3.5vw, 2.2rem);
     
